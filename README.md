@@ -80,7 +80,7 @@ As dimensões do bumbo são:
 - Parte traseira: retângulo de 10,3 cm x 8,1 cm;  
 - Fundo: retângulo de 8,2 cm x 8,0 cm.  
 
-<img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Modelos_3D/bumbo.png" height="400">
+<img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Modelos_3D/bumbo.png" height="393.5" width="545.5">
 Figura 4. Modelo 3D da Estrutura do Bumbo. Fonte: Autoria Própria.
 
 • Módulo DAC UDA1334: Após a abertura dos arquivos de áudio no módulo microSD e o acionamento de uma peça da bateria por meio das baquetas ou o toque no botão que integra o bumbo, inicia-se o processo de reprodução do som. O ESP32 utiliza a interface I2S, um protocolo otimizado para transmissão de áudio digital com baixa latência. A biblioteca I2S.h permite maior flexibilidade e ajustes na configuração do áudio com o DAC UDA1334. Para o projeto, escolhemos um padrão de áudio amplamente utilizado, com taxa de amostragem de 44,1 kHz e 16 bits. Além disso, foi utilizado o formato WAV, um formato de áudio não compactado que armazena os dados no padrão PCM (Pulse Code Modulation).
@@ -101,27 +101,3 @@ Para mais informações, leie o [artigo disponível no repositório.](https://gi
 <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Fotos/WhatsApp Image 2025-02-23 at 17.46.06 (1).jpeg" height="400" width="300">
 <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Fotos/WhatsApp Image 2025-02-23 at 17.46.50 (2).jpeg" height="400" width="300">
 
-<table align="center" style="width: 100%;">
-  <tr>
-    <!-- Coluna 1 -->
-    <td width="33%" align="center">
-      <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Modelos_3D/bumbo.png" width="85%">
-      <br>
-      <sub>Figura 4: Modelo 3D do Bumbo</sub>
-    </td>
-    
-    <!-- Coluna 2 -->
-    <td width="33%" align="center">
-      <img src="https://github.com/IsaBellaBortoleto/AirDrums/raw/main/Fotos/WhatsApp%20Image%202025-02-23%20at%2017.46.50%20(2).jpeg" width="95%">
-      <br>
-      <sub>Figura 5: Protótipo Montado</sub>
-    </td>
-    
-    <!-- Coluna 3 -->
-    <td width="33%" align="center">
-      <img src="https://github.com/IsaBellaBortoleto/AirDrums/raw/main/Diagrama_eletrico/Schematic_airdrums_2_2025-02-15%20(1).png" width="80%">
-      <br>
-      <sub>Figura 6: Diagrama Elétrico</sub>
-    </td>
-  </tr>
-</table>
