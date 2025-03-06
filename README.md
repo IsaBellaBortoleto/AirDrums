@@ -1,5 +1,5 @@
 
-## <h1 align="center">🚀 AIRDRUMS</h1>
+## <h1 align="center">🥁 AIRDRUMS</h1>
 <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Fotos/FotoPrincipal.jpeg">
 
 Como projeto final da disciplina de Oficina de Integração I foi realizado o AirDrums, um sistema que utiliza sensores de movimento e tecnologia digital para simular a experiência de tocar bateria sem a necessidade de um instrumento físico volumoso.
