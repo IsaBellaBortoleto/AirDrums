@@ -32,4 +32,35 @@ Além deles, foram utilizadas placas universais (PCBs) para a integração elét
 Os tópicos do desenvolvimento seguirão o fluxo de informações enviadas pelos componentes da bateria: ao serem acionadas, as baquetas ou o bumbo enviam os dados para o ESP32 central, que então processa e reproduz o som correspondente.  
 
 A **Figura 2** apresenta uma representação geral do projeto.  
+
 <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Vetores/diagrama.png">
+
+
+
+### Funcionamento das Baquetas  
+
+O funcionamento das baquetas é baseado na integração de um **ESP32** e um **módulo MPU-6050** em cada baqueta, como mostra a **Figura 2**. Ao ligar o aparelho, o módulo realiza uma calibração inicial e começa a captar os giros de dois eixos principais:  
+
+- O giro no eixo **Y** é usado para captar os movimentos de batida.  
+- O giro no eixo **Z** é utilizado para determinar a região das partes da bateria.  
+
+A **Figura 3** representa a visualização dos eixos do módulo.  
+
+#### Representação dos Eixos do MPU-6050 (Figura 3)  
+
+No código das baquetas, foi utilizada a biblioteca do módulo desenvolvida pela **Electronic Cats (Cats, 2025)**, que possibilita a ativação do **Digital Motion Processor (DMP)**.  
+
+O **DMP** é um circuito integrado ao **MPU-6050**, projetado para refinar a carga do processamento das informações fornecidas pelo módulo. Ele realiza cálculos complexos e aplica filtros nos dados brutos captados pelo sensor. Esse processamento é feito por um código proprietário, desenvolvido pela fabricante do módulo, a **InvenSense**, e de código fechado.  
+
+Como resultado, ele entrega informações mais elaboradas, na forma dos ângulos:  
+
+- **Yaw** (Guinada, rotação no eixo Z)  
+- **Pitch** (Arfagem, rotação no eixo X)  
+- **Roll** (Rolamento, rotação no eixo Y)  
+
+Esses ângulos são processados diretamente pelo DMP após a aplicação dos filtros internos.  
+
+Com isso, definimos zonas de ativação para cada parte da bateria através das baquetas, utilizando a posição relativa ao eixo **Z (Yaw)**. A **Figura 4** descreve os pontos de ativação de cada componente da bateria, assim como os ângulos de ativação.  
+
+As zonas foram determinadas para respeitar as partes naturais da bateria, garantindo precisão e fácil utilização do aparelho. As **faixas neutras** não correspondem a nenhum som e foram definidas para evitar conflito entre os pratos e tons.  
+
