@@ -34,7 +34,7 @@ Os tópicos do desenvolvimento seguirão o fluxo de informações enviadas pelos
 A **Figura 2** apresenta uma representação geral do projeto.  
 
 <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Vetores/diagrama.png">
-
+*Figura 2: Diagrama funcional das AirDrums, Fonte: Autoria Própria.*
 
 
 ### Funcionamento das Baquetas  
@@ -50,7 +50,7 @@ O **DMP** é um circuito integrado ao **MPU-6050**, que tem como objetivo refina
 
 Como resultado, ele entrega informações mais elaboradas, na forma dos ângulos **Yaw** (Guinada, rotação no eixo Z), **Pitch** (Arfagem, rotação no eixo X) e **Roll** (Rolamento, rotação no eixo Y), como são chamados após a aplicação dos filtros internos, processados diretamente pelo DMP.  
 
-Com isso, definimos zonas de ativação para cada parte da bateria através das baquetas, utilizando a posição relativa ao eixo **Z (Yaw)**. A **Figura 4** descreve os pontos de ativação de cada componente da bateria, assim como os ângulos de ativação.  
+Com isso, definimos zonas de ativação para cada parte da bateria através das baquetas, utilizando a posição relativa ao eixo **Z (Yaw)**. A **Figura 3** descreve os pontos de ativação de cada componente da bateria, assim como os ângulos de ativação.  
 
 As zonas foram assim determinadas para respeitar as partes naturais da bateria, garantir precisão e fácil utilização do aparelho, sendo que as **faixas neutras** não correspondem a nenhum som e foram definidas para evitar conflito entre os pratos e tons.  
 
