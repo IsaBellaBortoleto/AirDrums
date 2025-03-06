@@ -57,6 +57,26 @@ As zonas foram assim determinadas para respeitar as partes naturais da bateria, 
 <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Vetores/mapa_dos_pratos2.jpg">
 *Figura 4: Ângulos de Ativação das Partes da Bateria, Fonte: Autoria Própria.*
 
+Para o lançamento do som, utilizamos a posição relativa ao eixo **Y (Roll)**, é utilizado um ângulo de 10° para ativação, uma vez que corresponde ao movimento natural de tocar a bateria.  
+O **ESP32** trabalha de forma sequencial para identificar a ativação da peça, o módulo envia essa informação para a parte central. Toda a comunicação dos módulos **MPU** é feita através do protocolo **I2C**, que manda os dados pós-processados para as **ESP32** da baqueta, então esses identificam a parte da bateria e enviam essa informação em formato de texto através da porta de comunicação **TX**, conforme mostrado na **Figura 7**, utilizando o protocolo de comunicação **UART** (**Universal Asynchronous Receiver-Transmitter**), utilizado na troca de informações entre o microcontrolador da baqueta e o central, responsável por processar e reproduzir o som correto.  
+
+Essa informação é transmitida por meio de um cabo **Manga** de três vias, que, além de transmitir os dados, também fornece alimentação de 5 V para todo o sistema.  
+
+Por fim, as baquetas foram montadas em uma estrutura de **PVC**, projetada para se assemelhar ao instrumento original e proporcionar maior ergonomia durante o uso. A estrutura é composta por dois tubos de **PVC**, um com diâmetro de 40 mm e outro de 20 mm, conectados por luvas de redução por meio de encaixe por pressão. Para acabamento e proteção das extremidades, foram utilizadas tampas apropriadas para cada diâmetro. As baquetas possuem um comprimento de 28,5 cm no total.  
+
+Implementação do som  
+Após as baquetas detectarem a parte correspondente da bateria, essas informações são enviadas para o **ESP32** central, responsável pelo processamento dos dados e reprodução do som. Nele, temos três módulos integrados ao projeto:
+
+- **Módulo Micro-SD**: O sistema utiliza um cartão microSD para armazenar os arquivos de áudio das diferentes peças do instrumento. O microprocessador central acessa esses arquivos, que estão em formato digital, através da biblioteca **SD.h**. Para otimizar a reprodução, os dados dos arquivos são lidos sequencialmente e armazenados temporariamente em um buffer na memória do **ESP32**, antes de serem processados e enviados para os alto-falantes.
+  
+- **Botão de Ativação do Bumbo**: O **ESP32** central controla a ativação do bumbo por meio de um botão (**push button**), a detecção do acionamento ocorre através da variação da diferença de potencial (**DDP**) no pino digital do **ESP32** ao qual o botão está conectado. Quando pressionado, o botão fecha o circuito, alterando o nível lógico do pino de entrada, permitindo que o **ESP32** identifique a ativação do comando. O botão está conectado eletricamente à placa de circuito impresso (**PCB**) central por meio de um fio soldado de 2,0 m de comprimento. Para facilitar o acionamento com o pé, o botão foi integrado a uma estrutura de madeira com uma tampa angulada, projetada para dar mais conforto e ergonomia durante o uso. A **Figura 6** demonstra o modelo 3D projetado para a caixa do bumbo, feito no **SolidWorks**.  
+
+As dimensões do bumbo são:  
+- Parte superior: quadrado de 8,0 cm x 8,0 cm;  
+- Frente: retângulo de 7,1 cm x 8,1 cm;  
+- Laterais trapezoidais: base inferior de 8 cm, base superior inclinada de 8,5 cm, altura variando entre 7,0 cm e 9,0 cm;  
+- Parte traseira: retângulo de 10,3 cm x 8,1 cm;  
+- Fundo: retângulo de 8,2 cm x 8,0 cm.  
 
 ##
 Para mais informações, leie o [artigo disponível no repositório](https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Artigo.pdf)
