@@ -11,7 +11,7 @@ A proposta do projeto é oferecer uma alternativa compacta, permitindo a prátic
 - Guilherme de Souza Carneiro Garcia  
 
 
-## 3.2 Componentes Utilizados  
+## 1 Componentes Utilizados  
 
 - **ESP32 Dev Kit V1**: Microcontrolador principal do projeto, responsável por processar os dados dos sensores, interpretar os movimentos e gerenciar a reprodução dos sons da bateria virtual. Nesse contexto, dois ESP32 são usados para capturar os dados das baquetas e um ESP32 que processa os sinais e executa o áudio. A partir de agora, ele será chamado de ESP32 central.  
 
@@ -27,7 +27,7 @@ A proposta do projeto é oferecer uma alternativa compacta, permitindo a prátic
 
 Além deles, foram utilizadas placas universais (PCBs) para a integração elétrica das baquetas e do ESP32 central, uma estrutura de madeira projetada para acomodar os componentes e garantir sua segurança, cabos Manga para comunicação e alimentação das baquetas virtuais e uma estrutura de tubos de PVC para proteger e realizar o acabamento das baquetas, um resistor de 10kΩ para limitar a corrente no circuito do botão e massa para madeira para aperfeiçoar o acabamento da estrutura externa. Também foram utilizados jumpers para conectar os diversos módulos do circuito.
 
-### 3.4 Desenvolvimento  
+## 2 Desenvolvimento  
 
 Os tópicos do desenvolvimento seguirão o fluxo de informações enviadas pelos componentes da bateria: ao serem acionadas, as baquetas ou o bumbo enviam os dados para o ESP32 central, que então processa e reproduz o som correspondente.  
 
@@ -37,7 +37,7 @@ A **Figura 2** apresenta uma representação geral do projeto.
 *Figura 2: Diagrama funcional das AirDrums, Fonte: Autoria Própria.*
 
 
-### Funcionamento das Baquetas  
+### 2.1 Funcionamento das Baquetas  
 
 O funcionamento das baquetas é baseado na integração de um **ESP32** e um **módulo MPU-6050** em cada baqueta, como mostra a **Figura 2**. Ao ligar o aparelho, o módulo realiza uma calibração inicial e começa a captar os giros de dois eixos principais:  
 
@@ -54,3 +54,5 @@ Com isso, definimos zonas de ativação para cada parte da bateria através das 
 
 As zonas foram assim determinadas para respeitar as partes naturais da bateria, garantir precisão e fácil utilização do aparelho, sendo que as **faixas neutras** não correspondem a nenhum som e foram definidas para evitar conflito entre os pratos e tons.  
 
+<img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Vetores/MapaPratos.png">
+*Figura 4: Ângulos de Ativação das Partes da Bateria, Fonte: Autoria Própria.*
