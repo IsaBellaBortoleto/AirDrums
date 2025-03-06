@@ -57,6 +57,7 @@ As zonas foram assim determinadas para respeitar as partes naturais da bateria, 
 <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Vetores/mapa_dos_pratos2.jpg">
 *Figura 3: Ângulos de Ativação das Partes da Bateria, Fonte: Autoria Própria.*
 
+
 Para o lançamento do som, utilizamos a posição relativa ao eixo **Y (Roll)**, é utilizado um ângulo de 10° para ativação, uma vez que corresponde ao movimento natural de tocar a bateria.  
 O **ESP32** trabalha de forma sequencial para identificar a ativação da peça, o módulo envia essa informação para a parte central. Toda a comunicação dos módulos **MPU** é feita através do protocolo **I2C**, que manda os dados pós-processados para as **ESP32** da baqueta, então esses identificam a parte da bateria e enviam essa informação em formato de texto através da porta de comunicação **TX** utilizando o protocolo de comunicação **UART** (**Universal Asynchronous Receiver-Transmitter**), utilizado na troca de informações entre o microcontrolador da baqueta e o central, responsável por processar e reproduzir o som correto.  
 
@@ -79,7 +80,9 @@ As dimensões do bumbo são:
 - Fundo: retângulo de 8,2 cm x 8,0 cm.  
 
 <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Modelos_3D/bumbo.png" height="500">
-_Figura 6. Modelo 3D da Estrutura do Bumbo. Fonte: Autoria Própria_
+*Figura 6. Modelo 3D da Estrutura do Bumbo. Fonte: Autoria Própria*
+
+
 
 ##
 Para mais informações, leie o [artigo disponível no repositório](https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Artigo.pdf)
