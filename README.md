@@ -55,7 +55,7 @@ Com isso, definimos zonas de ativação para cada parte da bateria através das 
 
 As zonas foram assim determinadas para respeitar as partes naturais da bateria, garantir precisão e fácil utilização do aparelho, sendo que as **faixas neutras** não correspondem a nenhum som e foram definidas para evitar conflito entre os pratos e tons.  
 
-<img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Vetores/mapa_dos_pratos2.jpg" height="500">
+<img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Vetores/mapa_dos_pratos2.jpg">
 Figura 3: Ângulos de Ativação das Partes da Bateria, Fonte: Autoria Própria.
 
 
