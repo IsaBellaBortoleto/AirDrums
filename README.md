@@ -55,10 +55,10 @@ Com isso, definimos zonas de ativação para cada parte da bateria através das 
 As zonas foram assim determinadas para respeitar as partes naturais da bateria, garantir precisão e fácil utilização do aparelho, sendo que as **faixas neutras** não correspondem a nenhum som e foram definidas para evitar conflito entre os pratos e tons.  
 
 <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Vetores/mapa_dos_pratos2.jpg">
-*Figura 4: Ângulos de Ativação das Partes da Bateria, Fonte: Autoria Própria.*
+*Figura 3: Ângulos de Ativação das Partes da Bateria, Fonte: Autoria Própria.*
 
 Para o lançamento do som, utilizamos a posição relativa ao eixo **Y (Roll)**, é utilizado um ângulo de 10° para ativação, uma vez que corresponde ao movimento natural de tocar a bateria.  
-O **ESP32** trabalha de forma sequencial para identificar a ativação da peça, o módulo envia essa informação para a parte central. Toda a comunicação dos módulos **MPU** é feita através do protocolo **I2C**, que manda os dados pós-processados para as **ESP32** da baqueta, então esses identificam a parte da bateria e enviam essa informação em formato de texto através da porta de comunicação **TX**, conforme mostrado na **Figura 7**, utilizando o protocolo de comunicação **UART** (**Universal Asynchronous Receiver-Transmitter**), utilizado na troca de informações entre o microcontrolador da baqueta e o central, responsável por processar e reproduzir o som correto.  
+O **ESP32** trabalha de forma sequencial para identificar a ativação da peça, o módulo envia essa informação para a parte central. Toda a comunicação dos módulos **MPU** é feita através do protocolo **I2C**, que manda os dados pós-processados para as **ESP32** da baqueta, então esses identificam a parte da bateria e enviam essa informação em formato de texto através da porta de comunicação **TX** utilizando o protocolo de comunicação **UART** (**Universal Asynchronous Receiver-Transmitter**), utilizado na troca de informações entre o microcontrolador da baqueta e o central, responsável por processar e reproduzir o som correto.  
 
 Essa informação é transmitida por meio de um cabo **Manga** de três vias, que, além de transmitir os dados, também fornece alimentação de 5 V para todo o sistema.  
 
@@ -77,6 +77,9 @@ As dimensões do bumbo são:
 - Laterais trapezoidais: base inferior de 8 cm, base superior inclinada de 8,5 cm, altura variando entre 7,0 cm e 9,0 cm;  
 - Parte traseira: retângulo de 10,3 cm x 8,1 cm;  
 - Fundo: retângulo de 8,2 cm x 8,0 cm.  
+
+<img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Modelos_3D/bumbo">
+_Figura 6. Modelo 3D da Estrutura do Bumbo. Fonte: Autoria Própria_
 
 ##
 Para mais informações, leie o [artigo disponível no repositório](https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Artigo.pdf)
