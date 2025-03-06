@@ -90,7 +90,8 @@ O UDA1334 recebe esses dados digitais enviados pelo ESP32 e os converte em sinai
 Por fim, todo esse sistema foi soldado em uma PCB central de 10 por 10 cm, junto com um módulo regulador de tensão de 5 V para protoboard e um cabo de alimentação de 9 V, responsável por fornecer energia ao sistema. Tudo isso foi colocado em uma estrutura quadrada de madeira, com dimensões de 20,2 x 20,2 x 14 cm.
 
 O esquema elétrico, desenvolvido por meio do software EasyEDA, pode ser visualizado na Figura 5.
-<img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Diagrama_eletrico/Schematic_airdrums_2_2025-02-15%20(1).png" height="500">
+<img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Diagrama_eletrico/Schematic_airdrums_2_2025-02-15%20(1).png" height="400" style="transform: rotate(90deg);">
+
 
 
 ##
