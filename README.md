@@ -36,7 +36,7 @@ A **Figura 2** apresenta uma representação geral do projeto.
 
 <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Vetores/diagrama-novo.jpg">
 Figura 2: Diagrama funcional das AirDrums, Fonte: Autoria Própria.
----
+
 
 ### 🎯 Funcionamento das Baquetas  
 
@@ -57,7 +57,7 @@ As zonas foram assim determinadas para respeitar as partes naturais da bateria, 
 
 <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Vetores/mapa_dos_pratos2.jpg">
 Figura 3: Ângulos de Ativação das Partes da Bateria, Fonte: Autoria Própria.
----
+
 
 Para o lançamento do som, utilizamos a posição relativa ao eixo **Y (Roll)**, é utilizado um ângulo de 10° para ativação, uma vez que corresponde ao movimento natural de tocar a bateria.  
 O **ESP32** trabalha de forma sequencial para identificar a ativação da peça, o módulo envia essa informação para a parte central. Toda a comunicação dos módulos **MPU** é feita através do protocolo **I2C**, que manda os dados pós-processados para as **ESP32** da baqueta, então esses identificam a parte da bateria e enviam essa informação em formato de texto através da porta de comunicação **TX** utilizando o protocolo de comunicação **UART** (**Universal Asynchronous Receiver-Transmitter**), utilizado na troca de informações entre o microcontrolador da baqueta e o central, responsável por processar e reproduzir o som correto.  
@@ -82,7 +82,7 @@ As dimensões do bumbo são:
 
 <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Modelos_3D/bumbo.png" height="400">
 Figura 4. Modelo 3D da Estrutura do Bumbo. Fonte: Autoria Própria
----
+
 • Módulo DAC UDA1334: Após a abertura dos arquivos de áudio no módulo microSD e o acionamento de uma peça da bateria por meio das baquetas ou o toque no botão que integra o bumbo, inicia-se o processo de reprodução do som. O ESP32 utiliza a interface I2S, um protocolo otimizado para transmissão de áudio digital com baixa latência. A biblioteca I2S.h permite maior flexibilidade e ajustes na configuração do áudio com o DAC UDA1334. Para o projeto, escolhemos um padrão de áudio amplamente utilizado, com taxa de amostragem de 44,1 kHz e 16 bits. Além disso, foi utilizado o formato WAV, um formato de áudio não compactado que armazena os dados no padrão PCM (Pulse Code Modulation).
 
 O UDA1334 recebe esses dados digitais enviados pelo ESP32 e os converte em sinais analógicos, que são representações contínuas das ondas sonoras. Diferente do áudio digital, que processa o som em valores discretos (bits), o sinal analógico corresponde às oscilações da pressão do ar, tornando o som audível para o ser humano. Como alto-falantes e fones de ouvido operam exclusivamente com sinais analógicos, eles convertem essas variações elétricas em ondas sonoras e reproduzem o áudio para esses dispositivos através de uma saída P2.
@@ -97,5 +97,4 @@ Figura 5. Diagrama do Circuito Elétrico. Fonte: Autoria Própria
 ---
 
 
-##
 Para mais informações, leie o [artigo disponível no repositório](https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Artigo.pdf)
