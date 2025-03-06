@@ -27,3 +27,9 @@ A proposta do projeto é oferecer uma alternativa compacta, permitindo a prátic
 
 Além deles, foram utilizadas placas universais (PCBs) para a integração elétrica das baquetas e do ESP32 central, uma estrutura de madeira projetada para acomodar os componentes e garantir sua segurança, cabos Manga para comunicação e alimentação das baquetas virtuais e uma estrutura de tubos de PVC para proteger e realizar o acabamento das baquetas, um resistor de 10kΩ para limitar a corrente no circuito do botão e massa para madeira para aperfeiçoar o acabamento da estrutura externa. Também foram utilizados jumpers para conectar os diversos módulos do circuito.
 
+### 3.4 Desenvolvimento  
+
+Os tópicos do desenvolvimento seguirão o fluxo de informações enviadas pelos componentes da bateria: ao serem acionadas, as baquetas ou o bumbo enviam os dados para o ESP32 central, que então processa e reproduz o som correspondente.  
+
+A **Figura 2** apresenta uma representação geral do projeto.  
+<img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Vetores/diagrama.png">
