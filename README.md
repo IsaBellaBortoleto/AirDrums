@@ -11,7 +11,7 @@ A proposta do projeto é oferecer uma alternativa compacta, permitindo a prátic
 - Guilherme de Souza Carneiro Garcia  
 
 
-## ⚙️ 1. Componentes Utilizados  
+## ⚙️ Componentes Utilizados  
 
 - **ESP32 Dev Kit V1**: Microcontrolador principal do projeto, responsável por processar os dados dos sensores, interpretar os movimentos e gerenciar a reprodução dos sons da bateria virtual. Nesse contexto, dois ESP32 são usados para capturar os dados das baquetas e um ESP32 que processa os sinais e executa o áudio. A partir de agora, ele será chamado de ESP32 central.  
 
@@ -27,7 +27,7 @@ A proposta do projeto é oferecer uma alternativa compacta, permitindo a prátic
 
 Além deles, foram utilizadas placas universais (PCBs) para a integração elétrica das baquetas e do ESP32 central, uma estrutura de madeira projetada para acomodar os componentes e garantir sua segurança, cabos Manga para comunicação e alimentação das baquetas virtuais e uma estrutura de tubos de PVC para proteger e realizar o acabamento das baquetas, um resistor de 10kΩ para limitar a corrente no circuito do botão e massa para madeira para aperfeiçoar o acabamento da estrutura externa. Também foram utilizados jumpers para conectar os diversos módulos do circuito.
 
-## 🔨 2. Desenvolvimento  
+## 🔨 Desenvolvimento  
 
 Os tópicos do desenvolvimento seguirão o fluxo de informações enviadas pelos componentes da bateria: ao serem acionadas, as baquetas ou o bumbo enviam os dados para o ESP32 central, que então processa e reproduz o som correspondente.  
 
@@ -37,7 +37,7 @@ A **Figura 2** apresenta uma representação geral do projeto.
 *Figura 2: Diagrama funcional das AirDrums, Fonte: Autoria Própria.*
 
 
-### 🎯 2.1. Funcionamento das Baquetas  
+### 🎯 Funcionamento das Baquetas  
 
 O funcionamento das baquetas é baseado na integração de um **ESP32** e um **módulo MPU-6050** em cada baqueta, como mostra a **Figura 2**. Ao ligar o aparelho, o módulo realiza uma calibração inicial e começa a captar os giros de dois eixos principais:  
 
@@ -65,7 +65,7 @@ Essa informação é transmitida por meio de um cabo **Manga** de três vias, qu
 
 Por fim, as baquetas foram montadas em uma estrutura de **PVC**, projetada para se assemelhar ao instrumento original e proporcionar maior ergonomia durante o uso. A estrutura é composta por dois tubos de **PVC**, um com diâmetro de 40 mm e outro de 20 mm, conectados por luvas de redução por meio de encaixe por pressão. Para acabamento e proteção das extremidades, foram utilizadas tampas apropriadas para cada diâmetro. As baquetas possuem um comprimento de 28,5 cm no total.  
 
-### 🔊 2.2. Implementação do som  
+### 🔊 Implementação do som  
 Após as baquetas detectarem a parte correspondente da bateria, essas informações são enviadas para o **ESP32** central, responsável pelo processamento dos dados e reprodução do som. Nele, temos três módulos integrados ao projeto:
 
 - **Módulo Micro-SD**: O sistema utiliza um cartão microSD para armazenar os arquivos de áudio das diferentes peças do instrumento. O microprocessador central acessa esses arquivos, que estão em formato digital, através da biblioteca **SD.h**. Para otimizar a reprodução, os dados dos arquivos são lidos sequencialmente e armazenados temporariamente em um buffer na memória do **ESP32**, antes de serem processados e enviados para os alto-falantes.
