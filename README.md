@@ -83,6 +83,15 @@ As dimensões do bumbo são:
 *Figura 6. Modelo 3D da Estrutura do Bumbo. Fonte: Autoria Própria*
 
 
+• Módulo DAC UDA1334: Após a abertura dos arquivos de áudio no módulo microSD e o acionamento de uma peça da bateria por meio das baquetas ou o toque no botão que integra o bumbo, inicia-se o processo de reprodução do som. O ESP32 utiliza a interface I2S, um protocolo otimizado para transmissão de áudio digital com baixa latência. A biblioteca I2S.h permite maior flexibilidade e ajustes na configuração do áudio com o DAC UDA1334. Para o projeto, escolhemos um padrão de áudio amplamente utilizado, com taxa de amostragem de 44,1 kHz e 16 bits. Além disso, foi utilizado o formato WAV, um formato de áudio não compactado que armazena os dados no padrão PCM (Pulse Code Modulation).
+
+O UDA1334 recebe esses dados digitais enviados pelo ESP32 e os converte em sinais analógicos, que são representações contínuas das ondas sonoras. Diferente do áudio digital, que processa o som em valores discretos (bits), o sinal analógico corresponde às oscilações da pressão do ar, tornando o som audível para o ser humano. Como alto-falantes e fones de ouvido operam exclusivamente com sinais analógicos, eles convertem essas variações elétricas em ondas sonoras e reproduzem o áudio para esses dispositivos através de uma saída P2.
+
+Por fim, todo esse sistema foi soldado em uma PCB central de 10 por 10 cm, junto com um módulo regulador de tensão de 5 V para protoboard e um cabo de alimentação de 9 V, responsável por fornecer energia ao sistema. Tudo isso foi colocado em uma estrutura quadrada de madeira, com dimensões de 20,2 x 20,2 x 14 cm.
+
+O esquema elétrico, desenvolvido por meio do software EasyEDA, pode ser visualizado na Figura 7.
+
+
 
 ##
 Para mais informações, leie o [artigo disponível no repositório](https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Artigo.pdf)
