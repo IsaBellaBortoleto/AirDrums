@@ -35,7 +35,7 @@ Os tópicos do desenvolvimento seguirão o fluxo de informações enviadas pelos
 A **Figura 2** apresenta uma representação geral do projeto.  
 
 <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Vetores/diagrama-novo.jpg">
-*Figura 2: Diagrama funcional das AirDrums, Fonte: Autoria Própria.*
+Figura 2: Diagrama funcional das AirDrums, Fonte: Autoria Própria.
 
 
 ### 🎯 Funcionamento das Baquetas  
