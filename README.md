@@ -99,3 +99,4 @@ Figura 5. Diagrama do Circuito Elétrico. Fonte: Autoria Própria.
 
 Para mais informações, leie o [artigo disponível no repositório.](https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Artigo.pdf)
 <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Fotos/WhatsApp Image 2025-02-23 at 17.46.06 (1).jpeg" height="400" width="300">
+<img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Fotos/WhatsApp Image 2025-02-23 at 17.46.50 (2)" height="400" width="300">
