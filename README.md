@@ -44,23 +44,13 @@ O funcionamento das baquetas é baseado na integração de um **ESP32** e um **m
 - O giro no eixo **Y** é usado para captar os movimentos de batida.  
 - O giro no eixo **Z** é utilizado para determinar a região das partes da bateria.  
 
-A **Figura 3** representa a visualização dos eixos do módulo.  
+No código das baquetas, foi utilizada a biblioteca do módulo desenvolvida **Electronic Cats (Cats, 2025)**, que possibilita a ativação do **Digital Motion Processor (DMP)**.  
 
-#### Representação dos Eixos do MPU-6050 (Figura 3)  
+O **DMP** é um circuito integrado ao **MPU-6050**, que tem como objetivo refinar a carga do processamento das informações fornecidas pelo módulo, realizando cálculos complexos e aplicando filtros nos dados brutos captados pelo sensor. Esse processamento é realizado por um código proprietário, desenvolvido pela fabricante do módulo, a **InvenSense**, de código fechado.  
 
-No código das baquetas, foi utilizada a biblioteca do módulo desenvolvida pela **Electronic Cats (Cats, 2025)**, que possibilita a ativação do **Digital Motion Processor (DMP)**.  
-
-O **DMP** é um circuito integrado ao **MPU-6050**, projetado para refinar a carga do processamento das informações fornecidas pelo módulo. Ele realiza cálculos complexos e aplica filtros nos dados brutos captados pelo sensor. Esse processamento é feito por um código proprietário, desenvolvido pela fabricante do módulo, a **InvenSense**, e de código fechado.  
-
-Como resultado, ele entrega informações mais elaboradas, na forma dos ângulos:  
-
-- **Yaw** (Guinada, rotação no eixo Z)  
-- **Pitch** (Arfagem, rotação no eixo X)  
-- **Roll** (Rolamento, rotação no eixo Y)  
-
-Esses ângulos são processados diretamente pelo DMP após a aplicação dos filtros internos.  
+Como resultado, ele entrega informações mais elaboradas, na forma dos ângulos **Yaw** (Guinada, rotação no eixo Z), **Pitch** (Arfagem, rotação no eixo X) e **Roll** (Rolamento, rotação no eixo Y), como são chamados após a aplicação dos filtros internos, processados diretamente pelo DMP.  
 
 Com isso, definimos zonas de ativação para cada parte da bateria através das baquetas, utilizando a posição relativa ao eixo **Z (Yaw)**. A **Figura 4** descreve os pontos de ativação de cada componente da bateria, assim como os ângulos de ativação.  
 
-As zonas foram determinadas para respeitar as partes naturais da bateria, garantindo precisão e fácil utilização do aparelho. As **faixas neutras** não correspondem a nenhum som e foram definidas para evitar conflito entre os pratos e tons.  
+As zonas foram assim determinadas para respeitar as partes naturais da bateria, garantir precisão e fácil utilização do aparelho, sendo que as **faixas neutras** não correspondem a nenhum som e foram definidas para evitar conflito entre os pratos e tons.  
 
