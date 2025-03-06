@@ -93,6 +93,7 @@ O esquema elétrico, desenvolvido por meio do software EasyEDA, pode ser visuali
 
 <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Diagrama_eletrico/Schematic_airdrums_2_2025-02-15%20(1).png" height="400" style="transform: rotate(90deg);">
 Figura 5. Diagrama do Circuito Elétrico. Fonte: Autoria Própria
+
 ---
 
 
