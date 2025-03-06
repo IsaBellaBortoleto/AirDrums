@@ -79,7 +79,7 @@ As dimensões do bumbo são:
 - Parte traseira: retângulo de 10,3 cm x 8,1 cm;  
 - Fundo: retângulo de 8,2 cm x 8,0 cm.  
 
-<img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Modelos_3D/bumbo.png" height="500">
+<img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Modelos_3D/bumbo.png" height="400">
 *Figura 4. Modelo 3D da Estrutura do Bumbo. Fonte: Autoria Própria*
 
 
@@ -93,6 +93,9 @@ O esquema elétrico, desenvolvido por meio do software EasyEDA, pode ser visuali
 
 <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Diagrama_eletrico/Schematic_airdrums_2_2025-02-15%20(1).png" height="400" style="transform: rotate(90deg);">
 Figura 5. Diagrama do Circuito Elétrico. Fonte: Autoria Própria
+<small>
+    Figura 5. Diagrama do Circuito Elétrico. Fonte: Autoria Própria
+</small>
 
 
 ##
