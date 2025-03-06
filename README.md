@@ -78,7 +78,7 @@ As dimensões do bumbo são:
 - Parte traseira: retângulo de 10,3 cm x 8,1 cm;  
 - Fundo: retângulo de 8,2 cm x 8,0 cm.  
 
-<img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Modelos_3D/bumbo.png">
+<img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Modelos_3D/bumbo.png" height="200">
 _Figura 6. Modelo 3D da Estrutura do Bumbo. Fonte: Autoria Própria_
 
 ##
