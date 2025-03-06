@@ -4,10 +4,12 @@
 Como projeto final da disciplina de Oficina de Integração I foi realizado o AirDrums, um sistema que utiliza sensores de movimento e tecnologia digital para simular a experiência de tocar bateria sem a necessidade de um instrumento físico volumoso.
 A proposta do projeto é oferecer uma alternativa compacta, permitindo a prática sem restrições de espaço ou ruído.
 
-## Desenvolvedores
-Bruna Medeiros Teixeira
-Isabela Bella Bortoleto
-Guilherme de Souza Carneiro Garcia
+## Desenvolvedores  
+
+- Bruna Medeiros Teixeira  
+- Isabela Bella Bortoleto  
+- Guilherme de Souza Carneiro Garcia  
+
 
 ## 3.2 Componentes Utilizados  
 
