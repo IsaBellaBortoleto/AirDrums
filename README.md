@@ -100,3 +100,28 @@ Figura 5. Diagrama do Circuito Elétrico. Fonte: Autoria Própria.
 Para mais informações, leie o [artigo disponível no repositório.](https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Artigo.pdf)
 <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Fotos/WhatsApp Image 2025-02-23 at 17.46.06 (1).jpeg" height="400" width="300">
 <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Fotos/WhatsApp Image 2025-02-23 at 17.46.50 (2).jpeg" height="400" width="300">
+
+<table align="center" style="width: 100%;">
+  <tr>
+    <!-- Coluna 1 -->
+    <td width="33%" align="center">
+      <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Modelos_3D/bumbo.png" width="85%">
+      <br>
+      <sub>Figura 4: Modelo 3D do Bumbo</sub>
+    </td>
+    
+    <!-- Coluna 2 -->
+    <td width="33%" align="center">
+      <img src="https://github.com/IsaBellaBortoleto/AirDrums/raw/main/Fotos/WhatsApp%20Image%202025-02-23%20at%2017.46.50%20(2).jpeg" width="95%">
+      <br>
+      <sub>Figura 5: Protótipo Montado</sub>
+    </td>
+    
+    <!-- Coluna 3 -->
+    <td width="33%" align="center">
+      <img src="https://github.com/IsaBellaBortoleto/AirDrums/raw/main/Diagrama_eletrico/Schematic_airdrums_2_2025-02-15%20(1).png" width="80%">
+      <br>
+      <sub>Figura 6: Diagrama Elétrico</sub>
+    </td>
+  </tr>
+</table>
