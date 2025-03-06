@@ -33,7 +33,7 @@ Os tópicos do desenvolvimento seguirão o fluxo de informações enviadas pelos
 
 A **Figura 2** apresenta uma representação geral do projeto.  
 
-<img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Vetores/diagrama.png">
+<img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Vetores/diagrama-novo.jpg">
 *Figura 2: Diagrama funcional das AirDrums, Fonte: Autoria Própria.*
 
 
@@ -58,5 +58,5 @@ As zonas foram assim determinadas para respeitar as partes naturais da bateria, 
 *Figura 4: Ângulos de Ativação das Partes da Bateria, Fonte: Autoria Própria.*
 
 
-### 
+##
 Para mais informações, leie o [artigo disponível no repositório](https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Artigo.pdf)
