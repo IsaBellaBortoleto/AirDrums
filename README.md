@@ -59,7 +59,7 @@ As zonas foram assim determinadas para respeitar as partes naturais da bateria, 
 Figura 3: Ângulos de Ativação das Partes da Bateria, Fonte: Autoria Própria.
 
 
-Para o lançamento do som, utilizamos a posição relativa ao eixo **Y (Roll)**, é utilizado um ângulo de 10° para ativação, uma vez que corresponde ao movimento natural de tocar a bateria.  
+\par Para o lançamento do som, utilizamos a posição relativa ao eixo **Y (Roll)**, é utilizado um ângulo de 10° para ativação, uma vez que corresponde ao movimento natural de tocar a bateria.  
 O **ESP32** trabalha de forma sequencial para identificar a ativação da peça, o módulo envia essa informação para a parte central. Toda a comunicação dos módulos **MPU** é feita através do protocolo **I2C**, que manda os dados pós-processados para as **ESP32** da baqueta, então esses identificam a parte da bateria e enviam essa informação em formato de texto através da porta de comunicação **TX** utilizando o protocolo de comunicação **UART** (**Universal Asynchronous Receiver-Transmitter**), utilizado na troca de informações entre o microcontrolador da baqueta e o central, responsável por processar e reproduzir o som correto.  
 
 Essa informação é transmitida por meio de um cabo **Manga** de três vias, que, além de transmitir os dados, também fornece alimentação de 5 V para todo o sistema.  
@@ -92,9 +92,9 @@ Por fim, todo esse sistema foi soldado em uma PCB central de 10 por 10 cm, junto
 O esquema elétrico, desenvolvido por meio do software EasyEDA, pode ser visualizado na Figura 5.
 
 <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Diagrama_eletrico/Schematic_airdrums_2_2025-02-15%20(1).png" height="400" style="transform: rotate(90deg);">
-Figura 5. Diagrama do Circuito Elétrico. Fonte: Autoria Própria
+Figura 5. Diagrama do Circuito Elétrico. Fonte: Autoria Própria.
 
 ---
 
 
-Para mais informações, leie o [artigo disponível no repositório](https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Artigo.pdf)
+Para mais informações, leie o [artigo disponível no repositório.](https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Artigo.pdf)
