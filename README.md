@@ -101,7 +101,7 @@ Para mais informações, leia o [artigo disponível no repositório.](https://gi
 
 
 <p float="left">
-  <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Fotos/WhatsApp Image 2025-02-23 at 17.46.06 (1).jpeg" height="400" width="300" />
-  <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Fotos/WhatsApp Image 2025-02-23 at 17.46.50 (2).jpeg" height="400" width="300" /> 
-  <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main//Fotos/lenalee.jpeg" height="400" width="300" />
+  <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Fotos/WhatsApp Image 2025-02-23 at 17.46.06 (1).jpeg" height="200" width="150" />
+  <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Fotos/WhatsApp Image 2025-02-23 at 17.46.50 (2).jpeg" height="200" width="150" /> 
+  <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main//Fotos/lenalee.jpeg" height="200" width="150" />
 </p>
