@@ -91,7 +91,7 @@ Por fim, todo esse sistema foi soldado em uma PCB central de 10 por 10 cm, junto
 
 O esquema elétrico, desenvolvido por meio do software EasyEDA, pode ser visualizado na Figura 5.
 
-> <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Diagrama_eletrico/Schematic_airdrums_2_2025-02-15%20(1).png">
+> <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Diagrama_eletrico/Schematic_airdrums_2_2025-02-15%20(1).png"> <br/>
 > Figura 5. Diagrama do Circuito Elétrico. Fonte: Autoria Própria.
 
 ---
