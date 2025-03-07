@@ -97,7 +97,7 @@ O esquema elétrico, desenvolvido por meio do software EasyEDA, pode ser visuali
 ---
 
 
-Para mais informações, leie o [artigo disponível no repositório.](https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Artigo.pdf)
+Para mais informações, leia o [artigo disponível no repositório.](https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Artigo.pdf)
 
 
 <p float="left">
