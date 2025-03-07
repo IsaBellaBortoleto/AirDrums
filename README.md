@@ -34,8 +34,8 @@ Os tópicos do desenvolvimento seguirão o fluxo de informações enviadas pelos
 
 A **Figura 2** apresenta uma representação geral do projeto.  
 
-<img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Vetores/diagrama-novo.jpg">
-Figura 2: Diagrama funcional das AirDrums, Fonte: Autoria Própria.
+> <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Vetores/diagrama-novo.jpg"> <br/>
+> Figura 2: Diagrama funcional das AirDrums, Fonte: Autoria Própria.
 
 
 ### 🎯 Funcionamento das Baquetas  
@@ -55,8 +55,8 @@ Com isso, definimos zonas de ativação para cada parte da bateria através das 
 
 As zonas foram assim determinadas para respeitar as partes naturais da bateria, garantir precisão e fácil utilização do aparelho, sendo que as **faixas neutras** não correspondem a nenhum som e foram definidas para evitar conflito entre os pratos e tons.  
 
-<img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Vetores/mapa_dos_pratos2.jpg">
-Figura 3: Ângulos de Ativação das Partes da Bateria, Fonte: Autoria Própria.<br />
+> <img src="https://github.com/IsaBellaBortoleto/AirDrums/blob/main/Vetores/mapa_dos_pratos2.jpg"> <br/>
+> Figura 3: Ângulos de Ativação das Partes da Bateria, Fonte: Autoria Própria.<br />
 
 Para o lançamento do som, utilizamos a posição relativa ao eixo **Y (Roll)**, é utilizado um ângulo de 10° para ativação, uma vez que corresponde ao movimento natural de tocar a bateria.  
 O **ESP32** trabalha de forma sequencial para identificar a ativação da peça, o módulo envia essa informação para a parte central. Toda a comunicação dos módulos **MPU** é feita através do protocolo **I2C**, que manda os dados pós-processados para as **ESP32** da baqueta, então esses identificam a parte da bateria e enviam essa informação em formato de texto através da porta de comunicação **TX** utilizando o protocolo de comunicação **UART** (**Universal Asynchronous Receiver-Transmitter**), utilizado na troca de informações entre o microcontrolador da baqueta e o central, responsável por processar e reproduzir o som correto.  
